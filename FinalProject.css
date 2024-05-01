@@ -4,7 +4,7 @@
 }
 
 
-header{
+/* header{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -15,10 +15,10 @@ header{
 
 header nav{
     display: grid;
-    /*grid-column-end: auto;*/
+    grid-column-end: auto;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr) ;
-}
+} */
 
 #main-content{
     display: grid;
