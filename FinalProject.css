@@ -3,8 +3,12 @@
     box-sizing: border-box;
 }
 
+:root{
+    --primary: #FFFFFF;
+    --gray: rgb(244,244,244);
 
-header{
+}
+/* header{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -12,24 +16,30 @@ header{
     top: 0;
     padding: 2rem;
     justify-items: stretch; 
-}
+}  */
 
-#nav-links{
-
-}
 header nav{
     display: grid;
     grid-column-end: auto;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr) ;
+    grid-template-columns: repeat(3, 1fr);
     padding: 2rem;
-    align-items: end;
+    justify-items: end;
 }
+
+ nav a{
+  text-decoration: none;
+  color: white;      
+}
+nav a:hover{
+    text-decoration: underline;
+}
+
 
 #main-content{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     justify-self: end;
+
 }
 #main-content p{
     padding: 2rem
@@ -44,15 +54,58 @@ header nav{
     grid-template-columns: 1fr;
     grid-column-end: auto;
     justify-self: right;
-    padding-right: 2rem;
-    max-width: 25%;
+    padding-top: 3rem;
+    padding-right: 25%;
+    max-width: 33%;
 
 }
 
 form button{
-    padding-top: 2rem;
+    margin-top: 1rem;
 }
 
-.testmonials{
+.testmonial{
+    text-align: center;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem 2rem 2rem 2rem;
+}
 
+.testmonial img{
+    width: 50%;
+    border-radius: 2rem;
+}
+@media (max-width: 480px) {
+    #main-content{
+        display: grid;
+        text-wrap: wrap;
+    }
+    #main-content p{
+        padding-top: 2rem;
+    }
+    .form-section{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-end: auto;
+        justify-self: left;
+
+
+    }
+    .testmonial{
+        text-align: center;
+        text-wrap: pretty;
+        margin-left: 1rem;
+        /* margin-right: 2rem; */
+        display: grid;
+        grid-template-columns: 400px;
+        /* padding: 2rem 2rem 2rem 2rem; */
+        img{
+            width: 200px;
+        }
+        p{
+            width: 200px;
+        }
+    }    
 }

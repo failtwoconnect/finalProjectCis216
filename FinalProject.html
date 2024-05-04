@@ -1,58 +1,89 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <link href="FinalProject.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="finalproject.js"></script>
     <title>Final Project CIS 216</title>
 </head>
+
 <body>
-    <header class="bg-body-tertiary">
-      <h1>TranquilTrack</h1>
-        <nav>
-            <div class="" id="nav-links">
-              <a href="#" class="">Home</a>
-              <a href="Pricing.html">Pricing</a>
-              <a href="ContactUs.html">Contact Us</a>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid" >
+              <a class="navbar-brand" href="#">TranquilTrack</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" style="justify-content: end;" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+                  <li class="nav-item" >
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                 
+                  <li class="nav-item">
+                    <a class="nav-link">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            
-            
           </nav>
     </header>
     <main id="main-content">
-        <section>
+        <section id="description">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent egestas nisl sit amet rutrum luctus.
-                Duis eget vulputate massa. Nulla augue tortor, pretium tristique viverra eu, ornare nec sem. Integer quam
-                elit, pellentesque non convallis molestie, rhoncus quis justo. Etiam egestas finibus massa nec auctor. Sed
-                aliquam auctor fermentum. Nam leo augue, convallis a accumsan in, pellentesque sit amet velit. Fusce vulputate
-                ultricies porta. Fusce in diam nunc. Donec at metus massa. Curabitur suscipit non quam ut accumsan. Fusce
-                mattis purus in nunc sagittis sagittis. Praesent fringilla fermentum auctor.
+                TranquilTrack is a mood documenting application that will message your doctor/ therapist 
+                about your mood so you have something else to talk about when you are in session with them.
             </p>
         </section>
-        <section id="form-section" class="form-section">
-            <form>
+        <section id="form-section" class="form-section d-flex">
+            <form onsubmit="login()">
                 <label for="username">Username</label>
                 <input id="username" type="text" placeholder="username">
                 <br>
                 <label for="password">Password</label>
                 <input id="password" type="password" placeholder="password">
                 <br>
-                <button class="btn btn-success" type="submit" onsubmit="login()">Submit</button>
+                <button class="btn btn-success" type="submit">Submit</button>
             </form>
         </section>
         <hr>
         <hr>
-        <section class="testmonials">
-            <p>
 
-            </p>
-        </section>
     </main>
+    <section class="testmonial">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        </p>
+        <img src="counseling-therapy-couple-family-adoption-psychology-psychotherapy-concept-session-psychiatrist-psychologist-151771069.webp" alt="couple holding hands">
+    </section>
+    <section class="testmonial">
+        <img src="counseling-therapy-couple-family-adoption-psychology-psychotherapy-concept-session-psychiatrist-psychologist-151771069.webp" alt="couple holding hands">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. .
+        </p>
+        
+    </section>
+    <section class="testmonial">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent egestas nisl sit amet rutrum luctus.
+            
+        </p>
+        <img src="counseling-therapy-couple-family-adoption-psychology-psychotherapy-concept-session-psychiatrist-psychologist-151771069.webp" alt="couple holding hands">
+    </section>
 </body>
+
 </html>
